@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Carousel from 'react-multi-carousel';
 import Image from 'react-bootstrap/Image';
 import 'react-multi-carousel/lib/styles.css'
@@ -52,6 +52,8 @@ export default function CarouselComp() {
         infinite={true}
         responsive={responsive}
         keyBoardControl={true}
+        autoPlay={true}
+        autoPlaySpeed={5000}
         >
         {images.map((image, index) => (
           <div key={index}>

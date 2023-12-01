@@ -1,13 +1,23 @@
 import React from 'react';
-import Image from 'react-bootstrap/Image';
+import { Image, Button, Stack } from 'react-bootstrap';
 import CarouselComp from '../carousel';
+import '../css/home.css';
 
 const HomePage = () => {
   return (
     <>
-      <Image src={'img/vecteezy_desert_landscape.jpg'} alt="Desert landscape with a moon" fluid/>
-      <div>
-        <h1>Generate alt text for images on Discord with the power of A.I.</h1>
+      <div className="image-container">
+        <Image src={'img/vecteezy_desert_landscape.jpg'} alt="Desert landscape with a moon" fluid />
+        <Stack className='overlay-text-and-button'>
+          <div>
+            <h1 className='overlay-text'>Generate alt text for images on Discord with the power of A.I.</h1>
+          </div>
+          <div>
+            <Button className='overlay-button' type='submit'>
+              Add to Discord
+            </Button>
+          </div>
+        </Stack>
       </div>
       <CarouselComp />
     </>
