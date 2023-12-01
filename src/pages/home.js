@@ -1,11 +1,17 @@
 import React from 'react';
+import Image from 'react-bootstrap/Image';
+import CarouselComp from '../carousel';
 
 const HomePage = () => {
-    return (
+  return (
+    <>
+      <Image src={'img/vecteezy_desert_landscape.jpg'} alt="Desert landscape with a moon" fluid/>
       <div>
-        <h1>Welcome to the Home Page!</h1>
+        <h1>Generate alt text for images on Discord with the power of A.I.</h1>
       </div>
-    );
-  };
-  
-  export default HomePage;
+      <CarouselComp />
+    </>
+  );
+};
+
+export default HomePage;
