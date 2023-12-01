@@ -1,7 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Jockey+One&display=swap');
 
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #e5e5e5;
+}
+
 h1 {
     color: #FFFFFF;
+}
+
+h2 {
+    font-family: 'Jockey One', sans-serif;
+    font-size: 60px;
+}
+
+h3 {
+    font-family: 'Jockey One', sans-serif;
+    font-size: 50px;
+    text-align: left;
+}
+
+p {
+    text-align: left;
 }
 
 .image-container {
@@ -37,6 +58,11 @@ h1 {
 }
 
 .overlay-button:hover {
-    background-color: #FFFFFF;
+    background-color: #e5e5e5;
     color: #242f40;
+}
+
+.example-img-container {
+    position: relative;
+    width: 70%;
 }

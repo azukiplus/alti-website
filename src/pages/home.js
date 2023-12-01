@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image, Button, Stack } from 'react-bootstrap';
+import { Image, Button, Stack, Container, Row, Col } from 'react-bootstrap';
 import CarouselComp from '../carousel';
 import '../css/home.css';
 
@@ -20,6 +20,29 @@ const HomePage = () => {
         </Stack>
       </div>
       <CarouselComp />
+      <Container>
+        <div className="jumbotron jumbotron-fluid mt-3 pb-3">
+          <h2 className="display-4">Images are all around us.</h2>
+        </div>
+      </Container>
+
+      <div>
+        <Row>
+          <Col sm={8}>
+            <Container className='p-4 example-img-container'>
+              <Image src={'img/burger.jpg'} alt="burger" fluid />
+            </Container>
+          </Col>
+          <Col sm={4}>
+            <section className="mt-3 pb-3">
+              <h3 className="pt-3 pb-3">What is alt text?</h3>
+              <p className="pt-3 pb-3">
+                so this is a description that i will add later
+              </p>
+            </section>
+          </Col>
+        </Row>
+      </div>
     </>
   );
 };
