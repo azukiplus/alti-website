@@ -46,7 +46,7 @@ export default function CarouselComp() {
     <>
       <Container className="p-4">
         <h4 className='text-center pt-4'>Click an image below to see some example alt text.</h4>
-        <p className='text-center'>Alt text: {subtitle}</p>
+        <p className='text-center'>{subtitle}</p>
       </Container>
       <Carousel
         infinite={true}

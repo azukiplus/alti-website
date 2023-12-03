@@ -28,7 +28,7 @@ const HomePage = () => {
   return (
     <>
       <div className="image-container">
-        <Image src={'img/vecteezy_desert_landscape.jpg'} alt="Desert landscape with a moon" fluid />
+        <Image src={'img/vecteezy_desert_landscape.jpg'} title="Source: Vecteezy" alt="Desert landscape with a moon illuminating part of the sand." fluid />
         <Stack className='overlay-text-and-button'>
           <div>
             <h1 className='overlay-text'>Generate alt text for images on Discord with the power of A.I.</h1>

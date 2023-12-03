@@ -1,0 +1,49 @@
+nav .btn {
+    background-color: #cca43b;
+    border-color: #cca43b;
+    color: #242f40;
+}
+
+nav .btn:hover {
+    background-color: #e5e5e5;
+    border-color: #e5e5e5;
+    color: #363636;
+}
+
+nav .btn:active {
+    background-color: #e5e5e5 !important;
+    border-color: #e5e5e5;
+    color: #363636 !important;
+}
+.navbar-brand {
+    font-family: 'Jockey One', sans-serif;
+}
+
+.dark {
+    background-color: #242f40;
+    color: #ffffff;
+}
+
+.dark:hover {
+    color: #ffffff;
+}
+
+.dropdown-menu {
+    background-color: #242f40;
+    color: #ffffff;
+}
+
+.dropdown-menu:hover {
+    background-color: #242f40;
+    color: #ffffff;
+}
+
+#basic-nav-dropdown {
+    background-color: #242f40;
+    color: #ffffff;
+}
+
+.dropdown-item:hover {
+    background-color: #cca43b;
+    color: #242f40;
+}
