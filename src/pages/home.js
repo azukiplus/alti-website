@@ -42,7 +42,7 @@ const HomePage = () => {
             </section>
           </Col>
         </Row>
-        <Row>
+        <Row style={{ marginRight: 0, marginLeft: 0 }}>
           <Col sm={4}>
             <section className="ms-3 ps-3">
               <h3 className="pt-3 pb-3 ms-3 ps-3">About alti</h3>
