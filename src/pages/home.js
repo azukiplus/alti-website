@@ -78,28 +78,29 @@ const HomePage = () => {
         </Row>
         <CarouselComp />
 
-        <Container>
-        <div className="jumbotron jumbotron-fluid mt-3 pb-3 pt-4">
-          <h2 className="display-4">About alti</h2>
-        </div>
-      </Container>
+        <section id="about-alti" className="p-3">
+          <Container>
+            <div className="jumbotron jumbotron-fluid mt-3 pb-3 pt-4">
+              <h2 className="display-4">About alti</h2>
+            </div>
+          </Container>
+          <Row className="pt-4" style={{ marginRight: 0, marginLeft: 0 }}>
+            <Col sm={4}>
+              <section className="ms-3 ps-3">
+                <h3 className="pt-3 pb-3 ms-3 ps-3">What is alti?</h3>
+                <p className="pt-3 pb-3 ms-3 ps-3">
+                  Alti is a Discord bot developed by a team of students at the <a href="https://www.washington.edu/" target="_blank" rel="noreferrer">University of Washington, Seattle</a>. Once you add Alti to your Discord server, whenever someone sends an image, Alti will automatically generate alt text for the image using Artificial Intelligence. It then sends the alt text into the server as a message. Discord has a built-in way to add alt text to an image, but that requires the uploader to use the feature, which not everyone does. Alti makes it so that any image can be more accessible for users who are low vision or are blind.
+                </p>
+              </section>
 
-        <Row className="pt-4" style={{ marginRight: 0, marginLeft: 0 }}>
-          <Col sm={4}>
-            <section className="ms-3 ps-3">
-              <h3 className="pt-3 pb-3 ms-3 ps-3">What is alti?</h3>
-              <p className="pt-3 pb-3 ms-3 ps-3">
-                Alti is a Discord bot developed by a team of students at the <a href="https://www.washington.edu/">University of Washington, Seattle</a>. Once you add Alti to your Discord server, whenever someone sends an image, Alti will automatically generate alt text for the image using Artificial Intelligence. It then sends the alt text into the server as a message. Discord has a built-in way to add alt text to an image, but that requires the uploader to use the feature, which not everyone does. Alti makes it so that any image can be more accessible for users who are low vision or are blind.
-              </p>
-            </section>
-
-          </Col>
-          <Col sm={8}>
-            <Container className='p-4 example-img-container'>
-              <Image src={'img/uw.jpg'} alt="A large brick building at the University of Washington. The building has many rectangular windows and has a castle-like structure." fluid />
-            </Container>
-          </Col>
-        </Row>
+            </Col>
+            <Col sm={8}>
+              <Container className='p-4 example-img-container'>
+                <Image src={'img/uw.jpg'} alt="A large brick building at the University of Washington. The building has many rectangular windows and has a castle-like structure." fluid />
+              </Container>
+            </Col>
+          </Row>
+        </section>
       </div>
     </>
   );

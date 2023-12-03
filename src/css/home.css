@@ -45,12 +45,11 @@ main p a {
 main p a {
     background:
         linear-gradient(to right,
-            rgba(54, 54, 54, 1),
-            rgba(54, 54, 54, 1)),
+            rgba(229, 229, 229, 1),
+            rgba(229, 229, 229, 1)),
         linear-gradient(to right,
-            rgba(36, 47, 64, 1),
             rgba(204, 164, 59, 1),
-            rgba(36, 47, 64, 1));
+            rgba(204, 164, 59, 1));
     background-size: 100% 3px, 0 3px;
     background-position: 100% 100%, 0 100%;
     background-repeat: no-repeat;
@@ -163,4 +162,9 @@ main p a:hover {
 .img-caption {
     font-family: 'Jockey One', sans-serif;
     font-size: 20px;
+}
+
+#about-alti {
+    background-color: #242f40;
+    color: #ffffff;
 }

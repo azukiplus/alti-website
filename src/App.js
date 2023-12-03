@@ -6,6 +6,7 @@ import Faq from './pages/faq';
 import ThankYou from './pages/thankyou';
 import NotFound from './pages/notfound';
 import NavBar from './navbar';
+import Footer from './footer';
 import { Route, Routes } from 'react-router';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <Route path="/thank-you" element={<ThankYou />} />
           <Route path="*" element={<NotFound />}>"404 Not Found"</Route> 
         </Routes>
+        <Footer />
       </main>
     </div>
   );
