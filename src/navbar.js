@@ -4,7 +4,7 @@ import './css/navbar.css';
 
 function NavBar() {
     return (
-        <Navbar expand='lg' className='dark' sticky="top">
+        <Navbar expand='lg' className='dark navbar-dark' sticky="top">
             <Container fluid>
                 <Navbar.Brand className='dark' href='/'>alti</Navbar.Brand>
                 <Navbar.Toggle aria-controls='basic-navbar-nav' />
