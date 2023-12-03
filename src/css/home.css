@@ -36,6 +36,32 @@ ul {
 
 }
 
+main a {
+    color: inherit;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+main a {
+    background:
+        linear-gradient(to right,
+            rgba(54, 54, 54, 1),
+            rgba(54, 54, 54, 1)),
+        linear-gradient(to right,
+            rgba(204, 164, 59, 1),
+            rgba(36, 47, 64, 1),
+            rgba(204, 164, 59, 1),
+            rgba(36, 47, 64, 1));
+    background-size: 100% 3px, 0 3px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+}
+
+main a:hover {
+    background-size: 0 3px, 100% 3px;
+}
+
 .image-container {
     position: relative;
 }

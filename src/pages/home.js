@@ -42,7 +42,7 @@ const HomePage = () => {
       </div>
       <Container>
         <div className="jumbotron jumbotron-fluid mt-3 pb-3">
-          <h2 className="display-4">Images are all around us.</h2>
+          <h2 className="display-4">Background</h2>
         </div>
       </Container>
 
@@ -60,7 +60,8 @@ const HomePage = () => {
           </Col>
           <Col sm={4}>
             <section className="me-3 pe-3">
-              <h3>What is alt text?</h3>
+              <h3>About alt text</h3>
+              <h4>What is alt text?</h4>
               <p>
                 Alt text, shortened from the term alternative text, is text that gets read out loud by screen readers. Screen readers are used by people who are blind or have low vision to navigate the web. Alt text is used to describe images, so that people who are blind or have low vision can understand what the image is about.
               </p>
@@ -76,19 +77,26 @@ const HomePage = () => {
           </Col>
         </Row>
         <CarouselComp />
-        <Row style={{ marginRight: 0, marginLeft: 0 }}>
+
+        <Container>
+        <div className="jumbotron jumbotron-fluid mt-3 pb-3 pt-4">
+          <h2 className="display-4">About alti</h2>
+        </div>
+      </Container>
+
+        <Row className="pt-4" style={{ marginRight: 0, marginLeft: 0 }}>
           <Col sm={4}>
             <section className="ms-3 ps-3">
-              <h3 className="pt-3 pb-3 ms-3 ps-3">About alti</h3>
+              <h3 className="pt-3 pb-3 ms-3 ps-3">What is alti?</h3>
               <p className="pt-3 pb-3 ms-3 ps-3">
-                Alti is a Discord bot developed by a team of students at the University of Washington, Seattle. Once you add Alti to your server, whenever someone sends an image, Alti will automatically generate alt text for the image using Artificial Intelligence. It then sends the alt text into the server as a message. Discord has a built-in way to add alt text to an image, but that requires the uploader to use the feature, which not everyone does. Alti makes it so that any image can be more accessible for users who are low vision or are blind.
+                Alti is a Discord bot developed by a team of students at the <a href="https://www.washington.edu/">University of Washington, Seattle</a>. Once you add Alti to your Discord server, whenever someone sends an image, Alti will automatically generate alt text for the image using Artificial Intelligence. It then sends the alt text into the server as a message. Discord has a built-in way to add alt text to an image, but that requires the uploader to use the feature, which not everyone does. Alti makes it so that any image can be more accessible for users who are low vision or are blind.
               </p>
             </section>
 
           </Col>
           <Col sm={8}>
             <Container className='p-4 example-img-container'>
-              <Image src={'img/burger.jpg'} alt="burger" fluid />
+              <Image src={'img/uw.jpg'} alt="A large brick building at the University of Washington. The building has many rectangular windows and has a castle-like structure." fluid />
             </Container>
           </Col>
         </Row>
