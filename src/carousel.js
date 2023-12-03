@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Carousel from 'react-multi-carousel';
-import Image from 'react-bootstrap/Image';
+import {Image, Container} from 'react-bootstrap';
 import 'react-multi-carousel/lib/styles.css'
 
 export default function CarouselComp() {
@@ -8,17 +8,16 @@ export default function CarouselComp() {
    * Note: subtitle isn't working; work is commented out 
    */
 
-  // const [subtitle, setSubtitle] = useState('cat explanation');
+  const [subtitle, setSubtitle] = useState('');
 
   const images = [
-    { src: 'img/cat.jpg', alt: 'cat', subtitle: 'cat explanation' },
-    { src: 'img/burger.jpg', alt: 'burger', subtitle: 'burger explanation' },
-    { src: 'img/pizza.jpg', alt: 'pizza', subtitle: 'pizza explanation' },
-    { src: 'img/unagi.jpg', alt: 'eel', subtitle: 'eel explanation' },
-    { src: 'img/california.jpg', alt: 'California', subtitle: 'California explanation' },
-    { src: 'img/japan.jpg', alt: 'Japan', subtitle: 'Japan explanation' },
-    { src: 'img/akihabara.jpg', alt: 'Akihabara, Tokyo', subtitle: 'Akihabara, Tokyo explanation' },
-    { src: 'img/la.jpg', alt: 'Los Angeles', subtitle: 'Los Angeles explanation' }
+    { src: 'img/cat.jpg', subtitle: 'A close up image of a brown cat with pale green eyes and long, white whiskers. ' },
+    { src: 'img/pizza.jpg', subtitle: 'A whole pizza with tomato sauce, black olive slices, and a generous amount of cheese topped with leafy greens.' },
+    { src: 'img/unagi.jpg', subtitle: 'White rice inside a black bowl with Japanese grilled eel on top. The eel is slightly charred.' },
+    { src: 'img/california.jpg', subtitle: 'A partially cloudy landscape with red grass, a rocky path, and a tree on the left. The ocean is visible in the distance.' },
+    { src: 'img/japan.jpg', subtitle: 'A Japanese street with a road in the middle surrounded by brown buildings. There is a bar and a bank visible on the left side, and a crosswalk on the street.' },
+    { src: 'img/akihabara.jpg', subtitle: 'A picture of Akihabara, Tokyo on a sunny day. There are steep buildings with colorful Japanese ads plastered on them. It is crowded, with many people and cars.' },
+    { src: 'img/la.jpg', subtitle: 'A wooden boardwalk in Los Angeles with the ocean and beach visible around it. There are people crossing the boardwalk, and palm trees in the distance.' }
   ];
 
   const responsive = {
@@ -39,29 +38,29 @@ export default function CarouselComp() {
     }
   };
 
-  // const handleAfterChange = (currentSlide) => {
-  //   const correctIndex = currentSlide % images.length;
-  //   console.log(correctIndex)
-  //   setSubtitle(images[correctIndex].subtitle);
-  // };
+  const clickImage = (newSubtitle) => {
+    setSubtitle(newSubtitle);
+  };
 
   return (
     <>
+      <Container className="p-4">
+        <h4 className='text-center pt-4'>Click an image below to see some example alt text.</h4>
+        <p className='text-center'>Alt text: {subtitle}</p>
+      </Container>
       <Carousel
-        // afterChange={handleAfterChange}
         infinite={true}
         responsive={responsive}
         keyBoardControl={true}
-        autoPlay={true}
-        autoPlaySpeed={5000}
-        >
+      // autoPlay={true}
+      // autoPlaySpeed={5000}
+      >
         {images.map((image, index) => (
           <div key={index}>
-            <Image src={image.src} alt={image.alt} fluid />
+            <Image src={image.src} alt={image.subtitle} onClick={() => clickImage(image.subtitle)} fluid />
           </div>
         ))}
       </Carousel>
-      {/* <p>{subtitle}</p> */} 
     </>
   );
 }

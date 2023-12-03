@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import { Image, Button, Stack, Container, Row, Col } from 'react-bootstrap';
 import CarouselComp from '../carousel';
 import '../css/home.css';
@@ -6,7 +6,7 @@ import '../css/home.css';
 const HomePage = () => {
   const [buntext, setBuntext] = useState('?');
   const [meattext, setMeattext] = useState('?');
-  const [vegtext, setVegtext] = useState('?'); 
+  const [vegtext, setVegtext] = useState('?');
   const [bagtext, setBagtext] = useState('?');
 
   const bunClick = () => {
@@ -40,7 +40,6 @@ const HomePage = () => {
           </div>
         </Stack>
       </div>
-      <CarouselComp />
       <Container>
         <div className="jumbotron jumbotron-fluid mt-3 pb-3">
           <h2 className="display-4">Images are all around us.</h2>
@@ -67,15 +66,16 @@ const HomePage = () => {
               </p>
               <h4>Good alt text v.s. bad alt text</h4>
               <p>
-                Good alt text describes the image in as much detail as a user who is not blind or has low vision can understand. Bad alt text is either too vague or too specific. 
+                Good alt text describes the image in as much detail as a user who is not blind or has low vision can understand. Bad alt text is either too vague or too specific.
               </p>
-                <ul>
-                  <li>Good alt text: "A lightly toasted burger bun with lettuce, purple onion slices, a tomato slice, and a grilled patty inside it. The burger is in a paper bag."</li>
-                  <li>Bad alt text: "A burger"</li>
-                </ul>
+              <ul>
+                <li>Good alt text: "A lightly toasted burger bun with lettuce, purple onion slices, a tomato slice, and a grilled patty inside it. The burger is in a paper bag."</li>
+                <li>Bad alt text: "A burger"</li>
+              </ul>
             </section>
           </Col>
         </Row>
+        <CarouselComp />
         <Row style={{ marginRight: 0, marginLeft: 0 }}>
           <Col sm={4}>
             <section className="ms-3 ps-3">
