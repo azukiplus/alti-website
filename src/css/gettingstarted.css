@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Jockey+One&display=swap');
+
+.faq-container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+    margin: 0 auto;
+	align-items: center;
+	justify-content: center;
+	margin-top: 60px;
+}
+
+.faq {
+    font-size: 50px;
+    font-family: 'Jockey One', sans-serif;
+}
+
+.faq-link {
+	font-weight: normal;
+	text-decoration: underline;
+}
