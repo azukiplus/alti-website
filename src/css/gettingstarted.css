@@ -17,5 +17,19 @@
 
 .faq-link {
 	font-weight: normal;
-	text-decoration: underline;
+}
+
+.example-img-container {
+    position: relative;
+    width: 100%;
+	transition: transform .5s;
+}
+
+.example-img-container:hover {
+	transform: scale(1.02);
+}
+
+#faq-section {
+    background-color: #242f40;
+    color: #ffffff;
 }
