@@ -2,13 +2,26 @@ import React, { useState } from 'react';
 import Carousel from 'react-multi-carousel';
 import {Image, Container} from 'react-bootstrap';
 import 'react-multi-carousel/lib/styles.css'
+import "./css/carousel.css";
 
 export default function CarouselComp() {
   /**
    * Note: subtitle isn't working; work is commented out 
    */
 
-  const [subtitle, setSubtitle] = useState('');
+  const [subtitle, setSubtitle] = useState(
+    {
+      cat: true,
+      pizza: true,
+      unagi: true,
+      california: true,
+      japan: true,
+      akihabara: true,
+      la : true,
+    }
+  );
+
+  const [hidden, setHidden] = useState(false)
 
   const images = [
     { src: 'img/cat.jpg', subtitle: 'A close up image of a brown cat with pale green eyes and long, white whiskers. ' },
@@ -38,15 +51,22 @@ export default function CarouselComp() {
     }
   };
 
-  const clickImage = (newSubtitle) => {
-    setSubtitle(newSubtitle);
+  const clickImage = (src) => {
+    let key = src.replace('img/','').replace('.jpg','')
+    console.log(subtitle)
+    setSubtitle(prev => ({
+      ...subtitle,
+      [key] : !subtitle[key]
+    }))
+
   };
+
+  
 
   return (
     <>
       <Container className="p-4">
         <h4 className='text-center pt-4'>Click an image below to see some example alt text.</h4>
-        <p className='text-center'>{subtitle}</p>
       </Container>
       <Carousel
         infinite={true}
@@ -56,8 +76,11 @@ export default function CarouselComp() {
       // autoPlaySpeed={5000}
       >
         {images.map((image, index) => (
-          <div key={index}>
-            <Image src={image.src} alt={image.subtitle} onClick={() => clickImage(image.subtitle)} fluid />
+          <div key={index} className="carousel-card">
+            <Image className="image" src={image.src} alt={image.subtitle} onClick={() => clickImage(image.src)} fluid />
+            <div className={subtitle[image.src.replace('img/','').replace('.jpg','')] ? 'fadeIn' : 'fadeOut'}>
+              <p className='subtitle'>{image.subtitle}</p>
+            </div>
           </div>
         ))}
       </Carousel>
