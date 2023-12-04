@@ -47,3 +47,15 @@ nav .btn:active {
     background-color: #cca43b;
     color: #242f40;
 }
+
+.invis {
+    position: absolute;
+    color: transparent;
+    z-index: -1;
+    text-align: center;
+    margin-left: auto;
+    margin-right:auto;
+    left: 0;
+    right: 0;
+    width: 200px;
+}

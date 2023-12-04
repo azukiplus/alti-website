@@ -79,7 +79,7 @@ export default function CarouselComp() {
           <div key={index} className="carousel-card">
             <Image className="image" src={image.src} alt={image.subtitle} onClick={() => clickImage(image.src)} fluid />
             <div className={subtitle[image.src.replace('img/','').replace('.jpg','')] ? 'fadeIn' : 'fadeOut'}>
-              <p className='subtitle'>{image.subtitle}</p>
+              <p className='subtitle' aria-hidden='true'>{image.subtitle}</p>
             </div>
           </div>
         ))}

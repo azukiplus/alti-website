@@ -7,8 +7,8 @@ const GettingStarted = () => {
         <>
             <div className='p-3 mt-5'>
                 <Container>
-                    <div className='jumbotron jumbotron-fluid mt-3 pb-3'>
-                        <h2 className='display-4'>Getting Started with Alti</h2>
+                    <div className='jumbotron jumbotron-fluid mt-3 pb-3' id='main'>
+                        <h2 className='display-4 '>Getting Started with Alti</h2>
                     </div>
                 </Container>
                 <Row style={{ marginRight: 0, marginLeft: 0 }} className='ms-5'>
@@ -23,7 +23,7 @@ const GettingStarted = () => {
                                 Add Alti to the respective server you want
                                 through this{" "}
                                 <a
-                                    href='https://www.washington.edu/'
+                                    href='https://discord.com/oauth2/authorize?scope=bot&client_id=1178510218003492915'
                                     target='_blank'
                                     rel='noreferrer'
                                 >
