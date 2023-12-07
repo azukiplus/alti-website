@@ -17,21 +17,7 @@ const Faq = () => {
                             How much does Alti cost?
                         </Accordion.Header>
                         <Accordion.Body>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Varius vel pharetra vel turpis
-                            nunc. Tortor posuere ac ut consequat semper viverra.
-                            Mauris a diam maecenas sed enim. Diam sollicitudin
-                            tempor id eu. Aliquam eleifend mi in nulla posuere.
-                            Fusce id velit ut tortor. Sed elementum tempus
-                            egestas sed sed risus pretium quam. Ipsum faucibus
-                            vitae aliquet nec ullamcorper sit amet risus nullam.
-                            Non odio euismod lacinia at quis risus sed vulputate
-                            odio. Dui sapien eget mi proin sed libero. Aliquet
-                            sagittis id consectetur purus ut faucibus pulvinar
-                            elementum integer. Non enim praesent elementum
-                            facilisis leo. Nisl suscipit adipiscing bibendum
-                            est.
+                            Alti is free to use for general users.
                         </Accordion.Body>
                     </Accordion.Item>
                     <Accordion.Item eventKey='1'>
@@ -39,44 +25,23 @@ const Faq = () => {
                             Does Alti collect user data?
                         </Accordion.Header>
                         <Accordion.Body>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Varius vel pharetra vel turpis
-                            nunc. Tortor posuere ac ut consequat semper viverra.
-                            Mauris a diam maecenas sed enim. Diam sollicitudin
-                            tempor id eu. Aliquam eleifend mi in nulla posuere.
-                            Fusce id velit ut tortor. Sed elementum tempus
-                            egestas sed sed risus pretium quam. Ipsum faucibus
-                            vitae aliquet nec ullamcorper sit amet risus nullam.
-                            Non odio euismod lacinia at quis risus sed vulputate
-                            odio. Dui sapien eget mi proin sed libero. Aliquet
-                            sagittis id consectetur purus ut faucibus pulvinar
-                            elementum integer. Non enim praesent elementum
-                            facilisis leo. Nisl suscipit adipiscing bibendum
-                            est.
+                            Alti does not collect or store user data. However, we do need permissions to read your Discord server's messages and send messages in order to add alt text to images.
                         </Accordion.Body>
                     </Accordion.Item>
                     <Accordion.Item eventKey='2'>
                         <Accordion.Header>
-                            I can't add Alti for some reason. What am I doing
-                            wrong?
+                            I can't add Alti for some reason. What am I doing wrong?
                         </Accordion.Header>
                         <Accordion.Body>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Varius vel pharetra vel turpis
-                            nunc. Tortor posuere ac ut consequat semper viverra.
-                            Mauris a diam maecenas sed enim. Diam sollicitudin
-                            tempor id eu. Aliquam eleifend mi in nulla posuere.
-                            Fusce id velit ut tortor. Sed elementum tempus
-                            egestas sed sed risus pretium quam. Ipsum faucibus
-                            vitae aliquet nec ullamcorper sit amet risus nullam.
-                            Non odio euismod lacinia at quis risus sed vulputate
-                            odio. Dui sapien eget mi proin sed libero. Aliquet
-                            sagittis id consectetur purus ut faucibus pulvinar
-                            elementum integer. Non enim praesent elementum
-                            facilisis leo. Nisl suscipit adipiscing bibendum
-                            est.
+                            Make sure you have the Manage Server permission in the Discord server you're trying to add Alti to. 
+                        </Accordion.Body>
+                    </Accordion.Item>
+                    <Accordion.Item eventKey='3'>
+                        <Accordion.Header>
+                            Why do we need alt text?
+                        </Accordion.Header>
+                        <Accordion.Body>
+                            Alternative text is important for blind or low vision users who use screen readers to interact with the web. Although Discord allows us to add alt text to images, good alt text is rare to find!
                         </Accordion.Body>
                     </Accordion.Item>
                 </Accordion>
