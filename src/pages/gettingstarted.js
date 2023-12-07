@@ -1,5 +1,5 @@
 import React from "react";
-import { Image, Button, Stack, Container, Row, Col } from "react-bootstrap";
+import { Image, Container, Row, Col } from "react-bootstrap";
 import "../css/gettingstarted.css";
 
 const GettingStarted = () => {
@@ -7,8 +7,8 @@ const GettingStarted = () => {
         <>
             <div className='p-3 mt-5'>
                 <Container>
-                    <div className='jumbotron jumbotron-fluid mt-3 pb-3'>
-                        <h2 className='display-4'>Getting Started with Alti</h2>
+                    <div className='jumbotron jumbotron-fluid mt-3 pb-3' id='main'>
+                        <h2 className='display-4 '>Getting Started with Alti</h2>
                     </div>
                 </Container>
                 <Row style={{ marginRight: 0, marginLeft: 0 }} className='ms-5'>
@@ -23,7 +23,7 @@ const GettingStarted = () => {
                                 Add Alti to the respective server you want
                                 through this{" "}
                                 <a
-                                    href='https://www.washington.edu/'
+                                    href='https://discord.com/oauth2/authorize?scope=bot&client_id=1178510218003492915'
                                     target='_blank'
                                     rel='noreferrer'
                                 >
@@ -101,29 +101,28 @@ const GettingStarted = () => {
                         <Container className='mt-5 example-img-container'>
                             <Image
                                 src={"/img/permissions.png"}
-                                alt='A large brick building at the University of Washington. The building has many rectangular windows and has a castle-like structure.'
+                                alt='A section of a separate discord webpage prompting the user to allow Alti the discord bot to join one of the servers that the user has.'
                                 fluid
                                 className='rounded'
                             />
                         </Container>
                     </Col>
                 </Row>
-                
             </div>
             <section id='faq-section' className='faq-container pt-5 pb-5'>
-                    <h3>Something not going right?</h3>
-                    <p className='faq'>
-                        Check out our{" "}
-                        <a
-                            href='https://www.washington.edu/'
-                            target='_blank'
-                            rel='noreferrer'
-                            className='faq-link'
-                        >
-                            FAQ
-                        </a>
-                    </p>
-                </section>
+                <h3>Something not going right?</h3>
+                <p className='faq'>
+                    Check out our{" "}
+                    <a
+                        href='https://www.washington.edu/'
+                        target='_blank'
+                        rel='noreferrer'
+                        className='faq-link'
+                    >
+                        FAQ
+                    </a>
+                </p>
+            </section>
         </>
     );
 };

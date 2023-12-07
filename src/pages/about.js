@@ -6,8 +6,8 @@ const About = () => {
     return (
         <div className='p-3 about mt-5 mb-5'>
             <Container>
-                <div className='jumbotron jumbotron-fluid mt-3 pb-3'>
-                    <h1 className='display-4'>About Alti</h1>
+                <div className='jumbotron jumbotron-fluid mt-3 pb-3' id='main'>
+                    <h2 className='display-4'>About Alti</h2>
                 </div>
             </Container>
             <Col sm={12}>
