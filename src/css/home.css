@@ -3,37 +3,41 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #e5e5e5;
+    background-color: #0E173E;
 }
 
 h1 {
-    color: #FFFFFF;
+    color: #FEFEFEff;
 }
 
 h2 {
     font-family: 'Jockey One', sans-serif;
     font-size: 60px;
+    color: #FEFEFEff;
 }
 
 h3 {
     font-family: 'Jockey One', sans-serif;
     font-size: 50px;
     text-align: left;
+    color: #FEFEFEff;
 }
 
 h4 {
     font-family: 'Jockey One', sans-serif;
     font-size: 35px;
     text-align: left;
+    color: #FEFEFEff;
 }
 
 p {
     text-align: left;
+    color: #FEFEFEff;
 }
 
 ul {
     text-align: left;
-
+    color: #FEFEFEff;
 }
 
 main p a {
@@ -66,7 +70,7 @@ main p a:hover {
 
 .overlay-text-and-button {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     width: 40%;
     transform: translate(-100%, -30%);
@@ -79,10 +83,10 @@ main p a:hover {
 }
 
 .overlay-button {
-    background-color: #cca43b;
+    background-color: #e5e5e5;
+    color: #3F70D0ff;
     font-family: 'Jockey One', sans-serif;
     font-size: 28px;
-    color: #242f40;
     border: none;
     padding: 10px 20px;
     text-align: center;
@@ -93,8 +97,8 @@ main p a:hover {
 }
 
 .overlay-button:hover {
-    background-color: #e5e5e5;
-    color: #242f40;
+    background-color: #9D92CCff;
+    color: #ffffff;
 }
 
 .example-img-container {

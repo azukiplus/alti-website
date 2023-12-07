@@ -1,12 +1,12 @@
 nav .btn {
-    background-color: #cca43b;
-    border-color: #cca43b;
-    color: #242f40;
+    background-color: #9D92CCff;
+    border-color: #9D92CCff;
+    color: #ffffff;
 }
 
 nav .btn:hover {
     background-color: #e5e5e5;
-    border-color: #e5e5e5;
+    border-color: #ffffff;
     color: #363636;
 }
 
@@ -20,7 +20,7 @@ nav .btn:active {
 }
 
 .dark {
-    background-color: #242f40;
+    background-color: #3C4892ff;
     color: #ffffff;
 }
 
@@ -29,22 +29,22 @@ nav .btn:active {
 }
 
 .dropdown-menu {
-    background-color: #242f40;
+    background-color: #3C4892ff;
     color: #ffffff;
 }
 
 .dropdown-menu:hover {
-    background-color: #242f40;
+    background-color: #3C4892ff;
     color: #ffffff;
 }
 
 #basic-nav-dropdown {
-    background-color: #242f40;
+    background-color: #3C4892ff;
     color: #ffffff;
 }
 
 .dropdown-item:hover {
-    background-color: #cca43b;
+    background-color: #9D92CCff;
     color: #242f40;
 }
 

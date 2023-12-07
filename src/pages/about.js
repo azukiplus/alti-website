@@ -1,10 +1,10 @@
 import React from "react";
-import { Container, Col } from "react-bootstrap";
+import { Container, Row, Col, Image } from "react-bootstrap";
 import "../css/about.css";
 
 const About = () => {
-    return (
-        <div className='p-3 about mt-5 mb-5'>
+    return (<div className="about-container">
+        <div className='p-3 about'>
             <Container>
                 <div className='jumbotron jumbotron-fluid mt-3 pb-3' id='main'>
                     <h2 className='display-4'>About Alti</h2>
@@ -12,29 +12,36 @@ const About = () => {
             </Container>
             <Col sm={12}>
                 <section className='mt-5'>
-                    <h2>
-                        Introduction
-                    </h2>
-                    <h3>
-                        Discord and Accessibility
-                    </h3>
-                    <p>
-                        Discord is a popular online messaging platform available on both desktop and mobile. For our project, we examined how accessible Discord is for blind and low-vision (BLV) individuals.</p>
-                    <p>
-                        Currently, Discord allows for any user to add alt text manually to images they upload onto the platform. The problem with this is that many users don't know what alt text is, or won't add alt text to their images since they aren't part of the target audience that uses alt text. If users don't consciously decide to add alt text to their images, BLV individuals would not be able to access any picture media that people upload onto Discord. Also, if users forget to add alt text to their images, there is no way to edit their image and add alt text unless they delete the image and resend it.
-                    </p>
-                    <h3>
-                        What is Alti?
-                    </h3>
-                    <p>
-                        Alti is a Discord bot that automatically generates alt text for any image that gets uploaded onto Discord. Once you add Alti to your Discord server, Alti will automatically generate alt text for the image using artificial intelligence (AI).
-                    </p>
-                    <h3>
-                        AI and Trustworthiness
-                    </h3>
-                    <p>
-                        Alti runs off of two AI models: GPT-4 developed by OpenAI and Azure AI Vision developed by Microsoft. For any image, Alti will generate and display two versions of alt text using GPT-4 and Azure. But, since AI isn't always correct or accurate, we decided to allow for helpful users in a server to vote on which alt text is more accurate for any given image. Anyone in the server can vote for which alt text is more accurate. And, the more you vote, the more points you get in Alti's leaderboard!
-                    </p>
+                    <Row>
+                        <h2>
+                            Introduction
+                        </h2>
+                        <Col>
+                            <h3>
+                                Discord and Accessibility
+                            </h3>
+                            <p>
+                                Discord is a popular online messaging platform available on both desktop and mobile. For our project, we examined how accessible Discord is for blind and low-vision (BLV) individuals.</p>
+                            <p>
+                                Currently, Discord allows for any user to add alt text manually to images they upload onto the platform. The problem with this is that many users don't know what alt text is, or won't add alt text to their images since they aren't part of the target audience that uses alt text. If users don't consciously decide to add alt text to their images, BLV individuals would not be able to access any picture media that people upload onto Discord. Also, if users forget to add alt text to their images, there is no way to edit their image and add alt text unless they delete the image and resend it.
+                            </p>
+                            <h3>
+                                What is Alti?
+                            </h3>
+                            <p>
+                                Alti is a Discord bot that automatically generates alt text for any image that gets uploaded onto Discord. Once you add Alti to your Discord server, Alti will automatically generate alt text for the image using artificial intelligence (AI).
+                            </p>
+                            <h3>
+                                AI and Trustworthiness
+                            </h3>
+                            <p>
+                                Alti runs off of two AI models: GPT-4 developed by OpenAI and Azure AI Vision developed by Microsoft. For any image, Alti will generate and display two versions of alt text using GPT-4 and Azure. But, since AI isn't always correct or accurate, we decided to allow for helpful users in a server to vote on which alt text is more accurate for any given image. Anyone in the server can vote for which alt text is more accurate. And, the more you vote, the more points you get in Alti's leaderboard!
+                            </p>
+                        </Col>
+                        <Col>
+                            <Image src="img/alti_transparent.png" alt="The Alti logo that looks like a futuristic silver, cat-like creature with large blue eyes." className="logo-img" />
+                        </Col>
+                    </Row>
                 </section>
                 <section className='mt-5'>
                     <h2>Related Work</h2>
@@ -168,6 +175,7 @@ const About = () => {
                 </section>
             </Col>
         </div>
+    </div>
     );
 };
 

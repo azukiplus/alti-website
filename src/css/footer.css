@@ -1,5 +1,5 @@
 footer {
-    background-color: #cca43b;
+    background-color: #3C4E9Dff;
 }
 
 .logo {
@@ -16,8 +16,8 @@ footer {
             rgba(36, 47, 64, 0),
             rgba(36, 47, 64, 0)),
         linear-gradient(to right,
-            rgba(36, 47, 64, 1),
-            rgba(36, 47, 64, 1));
+            #ffffff,
+            #ffffff);
     background-size: 100% 2px, 0 2px;
     background-position: 100% 100%, 0 100%;
     background-repeat: no-repeat;

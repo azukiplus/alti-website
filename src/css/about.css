@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Jockey+One&display=swap');
 
+.about-container {
+    background-color: #FEFEFEff;
+}
 
 .about {
 	display: flex;
@@ -8,8 +11,13 @@
     max-width: 60%;
     margin: 0 auto;
 	align-items: center;
+    color: #0E173E;
+    background-color: #FEFEFEff;
 }
 
+.about p, .about h2, .about h3, .about h4, .about ul, .about li, .about a, .about blockquote {
+    color: #0E173E;
+}
 
 main p a {
     color: inherit;
@@ -23,8 +31,8 @@ main p a {
             rgba(229, 229, 229, 1),
             rgba(229, 229, 229, 1)),
         linear-gradient(to right,
-            rgba(204, 164, 59, 1),
-            rgba(204, 164, 59, 1));
+            #4690EAff,
+            #4690EAff);
     background-size: 100% 3px, 0 3px;
     background-position: 100% 100%, 0 100%;
     background-repeat: no-repeat;
