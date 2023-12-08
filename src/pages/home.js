@@ -12,7 +12,7 @@ const HomePage = () => {
 
   return (
     <>
-      <div className='image-container'>
+      <div className='image-container' id='main'>
         <Image
           src={"img/vecteezy_mountain.jpg"}
           title='Source: Vecteezy'
