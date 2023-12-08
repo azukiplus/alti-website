@@ -8,6 +8,7 @@ body {
 
 h1 {
     color: #FEFEFEff;
+    font-size: 60px;
 }
 
 h2 {
@@ -153,7 +154,7 @@ main p a:hover {
 
 /* very very very small screens */
 @media only screen and (max-width: 350px) {
-    h1 {
+    .overlay-text {
         font-size: 20px;
     }
 
@@ -186,7 +187,7 @@ main p a:hover {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (min-width: 350px) {
-    h1 {
+    .overlay-text {
         font-size: 30px;
     }
 
@@ -219,7 +220,7 @@ main p a:hover {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-    h1 {
+    .overlay-text {
         font-size: 30px;
     }
 
@@ -245,7 +246,7 @@ main p a:hover {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    h1 {
+    .overlay-text {
         font-size: 40px;
     }
 
@@ -266,7 +267,7 @@ main p a:hover {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    h1 {
+    .overlay-text {
         font-size: 60px;
     }
 

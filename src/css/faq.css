@@ -1,4 +1,16 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Jockey+One&display=swap');
+
 .accordion-button:not(.collapsed) {
     background-color: white;
+}
+
+.accordion-button {
+    background-color: white;
+    font-size: 24px;
+}
+
+.faq {
+    font-family: 'Jockey One', sans-serif;
+    color: #242f40;
 }

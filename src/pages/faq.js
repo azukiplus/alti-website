@@ -6,8 +6,8 @@ const Faq = () => {
     return (
         <div className='p-3 about mt-5 mb-5'>
             <Container>
-                <div className='jumbotron jumbotron-fluid mt-3 pb-3' id='main'>
-                    <h2 className='display-4'>Frequently Asked Questions</h2>
+                <div className='jumbotron jumbotron-fluid mt-3 pb-3'>
+                    <h1 className="faq">Frequently Asked Questions</h1>
                 </div>
             </Container>
             <div className='container-fluid mt-5'>

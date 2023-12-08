@@ -29,6 +29,10 @@
 	transform: scale(1.02);
 }
 
+.getting-started {
+	font-family: 'Jockey One', sans-serif;
+}
+
 #faq-section {
     background-color: #242f40;
     color: #ffffff;

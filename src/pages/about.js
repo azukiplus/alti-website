@@ -1,11 +1,11 @@
 import React from "react";
-import { Container, Row, Col, Image } from "react-bootstrap";
+import { Image } from "react-bootstrap";
 import "../css/about.css";
 
 const About = () => {
     return (
         <div className='about p-5'>
-            <h2>About Alti</h2>
+            <h1>About Alti</h1>
             <h2>
                 Introduction
             </h2>
@@ -13,7 +13,7 @@ const About = () => {
                 Discord and Accessibility
             </h3>
             <p>
-                Discord is a popular online messaging platform available on both desktop and mobile. For our project, we examined how accessible Discord is for blind and low-vision (BLV) individuals.</p>
+                <a href="https://discord.com/" target="_blank" rel="noreferrer">Discord</a> is a popular online messaging platform available on both desktop and mobile. For our project, we examined how accessible Discord is for blind and low-vision (BLV) individuals.</p>
             <p>
                 Currently, Discord allows for any user to add alt text manually to images they upload onto the platform. The problem with this is that many users don't know what alt text is, or won't add alt text to their images since they aren't part of the target audience that uses alt text. If users don't consciously decide to add alt text to their images, BLV individuals would not be able to access any picture media that people upload onto Discord. Also, if users forget to add alt text to their images, there is no way to edit their image and add alt text unless they delete the image and resend it.
             </p>
@@ -27,18 +27,18 @@ const About = () => {
                 AI and Trustworthiness
             </h3>
             <p>
-                Alti runs off of two AI models: GPT-4 developed by OpenAI and Azure AI Vision developed by Microsoft. For any image, Alti will generate and display two versions of alt text using GPT-4 and Azure. But, since AI isn't always correct or accurate, we decided to allow for helpful users in a server to vote on which alt text is more accurate for any given image. Anyone in the server can vote for which alt text is more accurate. And, the more you vote, the more points you get in Alti's leaderboard!
+                Alti runs off of two AI models: <a href="https://openai.com/product" target="_blank" rel="noreferrer">GPT-4</a> developed by OpenAI and <a href="https://azure.microsoft.com/en-us/products/ai-services/ai-vision" target="_blank" rel="noreferrer">Azure AI Vision</a> developed by Microsoft. For any image, Alti will generate and display two versions of alt text using GPT-4 and Azure. But, since AI isn't always correct or accurate, we decided to allow for helpful users in a server to vote on which alt text is more accurate for any given image. Anyone in the server can vote for which alt text is more accurate. And, the more you vote, the more points you get in Alti's leaderboard!
             </p>
 
-            {/* <Image src="img/alti_transparent.png" alt="The Alti logo that looks like a futuristic silver, cat-like creature with large blue eyes." className="logo-img" /> */}
+            {/* <Image src="img/alti_transparent.png" alt="The Alti logo that looks like a futuristic silver, cat-like creature with large blue eyes." /> */}
+
 
             <h2>Related Work</h2>
             <p>
-                In 2021, Meta announced that it would add AI-generated alt text for images so that BLV people can experience the imagery inside people's posts on its services. In this case, "participants had a positive reaction to [the automatic alt text] system and an enhanced experience with Facebook photos"
-                (https://dl.acm.org/doi/pdf/10.1145/2998181.2998364).
+                In 2021, <a href="https://about.fb.com/news/2021/01/using-ai-to-improve-photo-descriptions-for-blind-and-visually-impaired-people/" target="_blank" rel="noreferrer">Meta announced that it would add AI-generated alt text for images</a> so that BLV people can experience the imagery inside people's posts on its services. In this case, "participants had a positive reaction to [the automatic alt text] system and an enhanced experience with Facebook photos," <a href="https://dl.acm.org/doi/pdf/10.1145/2998181.2998364">according to the Facebook study presented at the 2017 ACM Conference on Computer Supported Cooperative Work and Social Computing</a>.
             </p>
             <p>
-                Other services like X (formerly Twitter) do not use AI-generated alt text. The service recently announced that users can add alt text to images upon posting an image, similar to how Discord currently works. This puts the decision of adding alt text to an image on the user, which results in "... a vast majority of user-uploaded images lack[ing] alt text" because "users tend to forget to add alt text and find authoring alt text to be difficult and time consuming" (https://dl.acm.org/doi/pdf/10.1145/3597638.3614495).
+                Other services like X (formerly Twitter) do not use AI-generated alt text. The service recently announced that <a href="https://blog.twitter.com/en_us/topics/product/2022/making-images-twitter-more-accessible" target="_blank" rel="noreferrer">users can add alt text to images</a> upon posting an image, similar to how Discord currently works. This puts the decision of adding alt text to an image on the user, which results in "... a vast majority of user-uploaded images lack[ing] alt text" because "users tend to forget to add alt text and find authoring alt text to be difficult and time consuming" <a href="https://dl.acm.org/doi/pdf/10.1145/3597638.3614495" target="_blank" rel="noreferrer">according a study presented by the SIGACCESS Conference on Computers and Accessibility</a>.
             </p>
 
             <h2>
@@ -51,7 +51,7 @@ const About = () => {
                 Design choice: Voting between multiple alt texts
             </h4>
             <p>
-                Because AI can be inaccurate, we decided that we need humans to decide if Alti's generated alt text is truly accurate or not. Discord bots have built-in User Interface features such as buttons that allow for users to interact with a bot. Because Alti was built to feature two different alt texts from different AI models, we decided to use Discord's built-in buttons as buttons to vote for which alt text they think is better.
+                Because AI can be inaccurate, we decided that we need humans to decide if Alti's generated alt text is truly accurate or not. Discord bots have <a href="https://support-dev.discord.com/hc/en-us/articles/6381892888087-Bots-Buttons" target="_blank" rel="noreferrer">built-in User Interface features such as buttons</a> that allow for users to interact with a bot. Because Alti was built to feature two different alt texts from different AI models, we decided to use Discord's built-in buttons as buttons to vote for which alt text they think is better.
             </p>
             <h4>
                 Design choice: Leaderboard
@@ -63,7 +63,7 @@ const About = () => {
                 Developing alti
             </h3>
             <p>
-                Alti is an open source project and can be viewed on Github. The bot is coded with JavaScript, in particular, discord.js, a Node.js module that allows us to connect our bot with the Discord Application Programming Interface (API).
+                Alti is an open source project and <a href="https://github.com/KeejayK/DiscordAltText" target="_blank" rel="noreferrer">can be viewed on Github</a>. The bot is coded with JavaScript, in particular, discord.js, a Node.js module that allows us to connect our bot with the Discord Application Programming Interface (API).
             </p>
             <p>
                 Here are the main steps Alti takes to generate alt text:
@@ -89,10 +89,10 @@ const About = () => {
             </p>
             <blockquote>
                 "Facebook has a brilliant feature where screen-readers describe images, in 2017 Facebook introduced automatic alternative text. Automatic alternative text (alt text) generates a description of a photo using artificial intelligence (AI) which is then read out loud by screen-readers. People using screen-readers will hear a list of items a photo may contain as they swipe past photos on Facebook, for example, a screen-reader might say, 'Image may contain: three people, people smiling, table, indoors' or 'image may contain: one person, outdoors, grass, plants and nature'... I use Facebook on my iPhone, iPad and also on the computer. On the iPhone and iPad, I use the Facebook app. I find it really easy to navigate and also find it very accessible (most of the time). I especially like the image description feature, and find this especially useful."
-                - Holly, a blogger who posts on her blog "Life of a Blind Girl"
+                - Holly, a blogger who posts on <a href="https://lifeofablindgirl.com/2019/04/03/how-accessible-is-social-media-if-you-have-a-visual-impairment/" target="_blank" rel="noreferrer">her blog "Life of a Blind Girl"</a>
             </blockquote>
             <p>
-                On the Discord support forums, there are BLV people who ask for Discord to add more functionalities around alt text, such as the feature to edit/add alt text after an image is uploaded.
+                On the Discord support forums, there are BLV people <a href="https://support.discord.com/hc/en-us/community/posts/4404136474775-Image-and-video-text-descriptions" target="_blank" rel="noreferrer">who ask for Discord to add more functionalities around alt text</a>, such as the feature to edit/add alt text after an image is uploaded.
             </p>
             <blockquote>
                 "I'm a blind discord user and I'm in servers where people posts a lot of images. We have the right to know what those images are about. There for I have a feature request.

@@ -5,6 +5,11 @@
     background-color: #FEFEFEff;
 }
 
+.about h1 {
+    color: #0E173E;
+    font-family: 'Jockey One', sans-serif;
+}
+
 .about p, .about h2, .about h3, .about h4, .about ul, .about li, .about a, .about blockquote {
     color: #0E173E;
 }

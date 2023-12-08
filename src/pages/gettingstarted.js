@@ -8,13 +8,13 @@ const GettingStarted = () => {
             <div className='p-3 mt-5'>
                 <Container>
                     <div className='jumbotron jumbotron-fluid mt-3 pb-3' id='main'>
-                        <h2 className='display-4 '>Getting Started with Alti</h2>
+                        <h1 className="getting-started">Getting Started with Alti</h1>
                     </div>
                 </Container>
                 <Row style={{ marginRight: 0, marginLeft: 0 }}>
                     <Col sm={6}>
                         <section>
-                            <h3>Step 1. Add Alti to Discord</h3>
+                            <h2>Step 1. Add Alti to Discord</h2>
                             <p>
                                 Note: You must be an administrator of the
                                 discord server you want to add Alti to.
@@ -51,7 +51,7 @@ const GettingStarted = () => {
                             </p>
                         </section>
                         <section className='mt-5'>
-                            <h3>Step 2. Set Alti Up</h3>
+                            <h2>Step 2. Set Alti Up</h2>
                             <p>
                                 Choose if you would like to enable Alti's
                                 leaderboard
@@ -76,7 +76,7 @@ const GettingStarted = () => {
                             </p>
                         </section>
                         <section className='mt-5'>
-                            <h3>Step 3. Commands!</h3>
+                            <h2>Step 3. Commands!</h2>
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur
                                 adipiscing elit, sed do eiusmod tempor
@@ -110,7 +110,7 @@ const GettingStarted = () => {
                 </Row>
             </div>
             <section id='faq-section' className='faq-container pt-5 pb-5'>
-                <h3>Something not going right?</h3>
+                <h2>Something not going right?</h2>
                 <p className='faq'>
                     Check out our{" "}
                     <a
