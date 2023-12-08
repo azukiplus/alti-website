@@ -45,8 +45,8 @@ function NavBar() {
                             About
                         </Nav.Link>
                     </Nav>
-                    <div className='d-flex gap-3'>
-                        <Form inline>
+                    <div className='d-flex justify-content-center'>
+                        {/* <Form inline>
                             <InputGroup>
                                 <Form.Control
                                     type='text'
@@ -54,7 +54,7 @@ function NavBar() {
                                 />
                                 <Button type='submit'>Submit</Button>
                             </InputGroup>
-                        </Form>
+                        </Form> */}
                         <Button
                             type='submit'
                             href='https://discord.com/oauth2/authorize?scope=bot&client_id=1178510218003492915'

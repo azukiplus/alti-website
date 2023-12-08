@@ -1,22 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Jockey+One&display=swap');
 
-.about-container {
-    background-color: #FEFEFEff;
-}
-
 .about {
-	display: flex;
-	flex-direction: column;
-    width: 100%;
-    max-width: 60%;
-    margin: 0 auto;
-	align-items: center;
     color: #0E173E;
     background-color: #FEFEFEff;
 }
 
 .about p, .about h2, .about h3, .about h4, .about ul, .about li, .about a, .about blockquote {
     color: #0E173E;
+}
+
+.about ul, .about li, .about blockquote {
+    text-align: left;
 }
 
 main p a {

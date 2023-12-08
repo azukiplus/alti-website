@@ -49,7 +49,7 @@ export default function CarouselComp() {
 
   const clickImage = (src) => {
     let key = src.replace('img/','').replace('.jpg','')
-    console.log(subtitle)
+    //console.log(subtitle)
     setSubtitle(prev => ({
       ...subtitle,
       [key] : !subtitle[key]

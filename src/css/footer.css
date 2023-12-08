@@ -5,6 +5,8 @@ footer {
 .logo {
     font-family: 'Jockey One', sans-serif;
     font-size: 35px;
+    text-decoration: none;
+    color: #ffffff
 }
 
 .footer-links a {

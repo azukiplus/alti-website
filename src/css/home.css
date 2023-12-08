@@ -72,13 +72,12 @@ main p a:hover {
     position: absolute;
     top: 40%;
     left: 50%;
-    width: 40%;
-    transform: translate(-100%, -30%);
+    width: 50%;
+    transform: translate(-85%, -30%);
 }
 
 .overlay-text {
     font-family: 'Jockey One', sans-serif;
-    font-size: 60px;
     text-align: left
 }
 
@@ -86,11 +85,8 @@ main p a:hover {
     background-color: #e5e5e5;
     color: #3F70D0ff;
     font-family: 'Jockey One', sans-serif;
-    font-size: 28px;
     border: none;
-    padding: 10px 20px;
     text-align: center;
-    width: 50%;
     display: block;
     margin-left: 0;
     transition: background-color 0.5s ease, color 0.5s ease;
@@ -106,32 +102,14 @@ main p a:hover {
     width: 70%;
 }
 
-.layer-parent {
-    position: relative;
-}
-
-.layer-bun {
-    position: absolute;
-    top: 26%;
-    left: 45%;
-}
-
-.layer-vegetables {
-    position: absolute;
-    top: 40%;
-    left: 30%;
-}
-
-.layer-meat {
-    position: absolute;
-    top: 54%;
-    left: 29%;
-}
-
-.layer-bag {
-    position: absolute;
-    top: 14%;
-    left: 50%;
+.subtitle {
+	position: absolute;
+	bottom: 0px;
+	text-align: center;
+	background-color: rgb(0, 0, 0, .6);
+	color: white;
+	padding: 10px;
+	margin-bottom: 0;
 }
 
 .circular-btn {
@@ -171,4 +149,130 @@ main p a:hover {
 #about-alti {
     background-color: #242f40;
     color: #ffffff;
+}
+
+/* very very very small screens */
+@media only screen and (max-width: 350px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+
+    h4 {
+        font-size: 30px;
+    }
+
+    .overlay-button {
+        font-size: 16px;
+        width: 80%;
+        padding: 6px 14px;
+    }
+
+    .overlay-text-and-button {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        width: 85%;
+        transform: translate(-40%, -30%);
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 350px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+
+    h4 {
+        font-size: 30px;
+    }
+
+    .overlay-button {
+        font-size: 16px;
+        width: 80%;
+        padding: 6px 14px;
+    }
+
+    .overlay-text-and-button {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        width: 65%;
+        transform: translate(-65%, -30%);
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 45px;
+    }
+
+    h3 {
+        font-size: 40px;
+    }
+
+    h4 {
+        font-size: 40px;
+    }
+
+    
+    .overlay-button {
+        font-size: 16px;
+        width: 50%;
+        padding: 10px 20px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 60px;
+    }
+
+    h3 {
+        font-size: 50px;
+    }
+
+    .overlay-button {
+        font-size: 18px;
+        width: 50%;
+        padding: 10px 20px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    h1 {
+        font-size: 60px;
+    }
+
+    .overlay-button {
+        font-size: 24px;
+        width: 50%;
+        padding: 10px 20px;
+    }
 }

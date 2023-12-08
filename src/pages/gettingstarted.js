@@ -11,9 +11,9 @@ const GettingStarted = () => {
                         <h2 className='display-4 '>Getting Started with Alti</h2>
                     </div>
                 </Container>
-                <Row style={{ marginRight: 0, marginLeft: 0 }} className='ms-5'>
+                <Row style={{ marginRight: 0, marginLeft: 0 }}>
                     <Col sm={6}>
-                        <section className='ms-3 mt-5'>
+                        <section>
                             <h3>Step 1. Add Alti to Discord</h3>
                             <p>
                                 Note: You must be an administrator of the
@@ -50,7 +50,7 @@ const GettingStarted = () => {
                                 leo. Nisl suscipit adipiscing bibendum est.
                             </p>
                         </section>
-                        <section className='ms-3 mt-5'>
+                        <section className='mt-5'>
                             <h3>Step 2. Set Alti Up</h3>
                             <p>
                                 Choose if you would like to enable Alti's
@@ -75,7 +75,7 @@ const GettingStarted = () => {
                                 leo. Nisl suscipit adipiscing bibendum est.
                             </p>
                         </section>
-                        <section className='ms-3 mt-5'>
+                        <section className='mt-5'>
                             <h3>Step 3. Commands!</h3>
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur
@@ -114,8 +114,7 @@ const GettingStarted = () => {
                 <p className='faq'>
                     Check out our{" "}
                     <a
-                        href='https://www.washington.edu/'
-                        target='_blank'
+                        href='/resources/faq'
                         rel='noreferrer'
                         className='faq-link'
                     >

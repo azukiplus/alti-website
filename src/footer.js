@@ -8,7 +8,7 @@ function Footer() {
             <div className="container-fluid text-center">
                 <Row className='p-3'>
                     <Col className='p-3'>
-                        <p className="logo text-center">alti</p>
+                        <a className="logo text-center" href="/">alti</a>
                     </Col>
                     <Col className='p-3'>
                         <ul className="list-unstyled footer-links">

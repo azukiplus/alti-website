@@ -4,11 +4,11 @@ import CarouselComp from "../carousel";
 import "../css/home.css";
 
 const HomePage = () => {
-  const [flowertext, setFlowertext] = useState("?");
+  //const [flowertext, setFlowertext] = useState("If you were describing the image above to a blind person, what would you say?");
 
-  const flowerClick = () => {
-    flowertext === "?" ? setFlowertext("Vibrant blue hydrangea blossoms with purple towards the center of the flowers. The flowers' delicate petals are clustered together.") : setFlowertext("?");
-  };
+  // const flowerClick = () => {
+  //   flowertext === "If you were describing the image above to a blind person, what would you say?" ? setFlowertext("Vibrant blue hydrangea blossoms with purple towards the center of the flowers. The flowers' delicate petals are clustered together.") : setFlowertext("If you were describing the image above to a blind person, what would you say?");
+  // };
 
   return (
     <>
@@ -16,7 +16,7 @@ const HomePage = () => {
         <Image
           src={"img/vecteezy_mountain.jpg"}
           title='Source: Vecteezy'
-          alt='Desert landscape with a moon illuminating part of the sand.'
+          alt='A large, snowy mountain with snowy hilltops in the distance. The sky is a colorful purple and blue with stars illuminating it.'
           fluid
         />
         <Stack className='overlay-text-and-button'>
@@ -41,7 +41,7 @@ const HomePage = () => {
       </div>
       <Container>
         <div className='jumbotron jumbotron-fluid mt-3 pb-3 ' id='main'>
-          <h2 className='display-4'>Background</h2>
+          <h2>Background</h2>
         </div>
       </Container>
 
@@ -51,21 +51,18 @@ const HomePage = () => {
             <Container className='p-4 example-img-container'>
               <Image
                 src={"img/flowers.jpg"}
-                alt='flowers'
+                alt='Vibrant blue hydrangea blossoms with delicate, pale purple towards the center of the flowers.'
                 className='layer-parent'
                 fluid
               />
-              <Button
+              <p>If you were describing the image above to a blind person, what would you say?</p>
+              {/* <Button
                 type='checkbox'
-                className='layer-bun circular-btn'
+                className='flower-button'
                 onClick={flowerClick}
               >
                 {flowertext}
-              </Button>
-              <p className='img-caption pt-4'>
-                Click on the question mark for an example of alt
-                text that describe this image.
-              </p>
+              </Button> */}
             </Container>
           </Col>
           <Col sm={4}>
@@ -110,7 +107,7 @@ const HomePage = () => {
             style={{ marginRight: 0, marginLeft: 0 }}
           >
             <Col sm={4}>
-              <section className='ms-3 ps-3'>
+              <section>
                 <h3 className='pt-3 pb-3 ms-3 ps-3'>
                   What is alti?
                 </h3>
@@ -142,7 +139,7 @@ const HomePage = () => {
               <Container className='p-4 example-img-container'>
                 <Image
                   src={"img/alti.png"}
-                  alt='The Alti logo that looks like a futuristic silver, cat-like creature with large blue eyes.'
+                  alt='The Alti logo. A futuristic silver, cat-like creature with large blue eyes holding the text "A, I, L, T, I" with the "I" representing the "I" in artificial intelligence.'
                   fluid
                 />
               </Container>
