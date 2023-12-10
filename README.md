@@ -1,3 +1,4 @@
+# View the [deployed version of this web app on Firebase](https://alti-9e674.web.app/). 
 # What does this scaffolding code provide?
 
 This is the starter code for a React app. This is good starter code because similar to what Android Studio does when creating a new project, it automatically sets up the project and sets up the interactions between the different files without extra installations/configurations so that we can start coding immediately. The other good thing about this is because it comes with a built-in dev server, it allows for us to test the web app in real time using npm start. 
