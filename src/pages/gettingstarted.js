@@ -7,8 +7,13 @@ const GettingStarted = () => {
         <>
             <div className='p-3 mt-5'>
                 <Container>
-                    <div className='jumbotron jumbotron-fluid mt-3 pb-3' id='main'>
-                        <h1 className="getting-started">Getting Started with Alti</h1>
+                    <div
+                        className='jumbotron jumbotron-fluid mt-3 pb-3'
+                        id='main'
+                    >
+                        <h1 className='getting-started'>
+                            Getting Started with Alti
+                        </h1>
                     </div>
                 </Container>
                 <Row style={{ marginRight: 0, marginLeft: 0 }}>
@@ -20,8 +25,9 @@ const GettingStarted = () => {
                                 discord server you want to add Alti to.
                             </p>
                             <p>
-                                Add Alti to the respective server you want
-                                through this{" "}
+                                To start, please accept the necessary
+                                permissions and add Alti to the respective
+                                server you want through this{" "}
                                 <a
                                     href='https://discord.com/oauth2/authorize?scope=bot&client_id=1178510218003492915'
                                     target='_blank'
@@ -29,72 +35,80 @@ const GettingStarted = () => {
                                 >
                                     authorization link
                                 </a>
-                                .
-                            </p>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua.
-                                Varius vel pharetra vel turpis nunc. Tortor
-                                posuere ac ut consequat semper viverra. Mauris a
-                                diam maecenas sed enim. Diam sollicitudin tempor
-                                id eu. Aliquam eleifend mi in nulla posuere.
-                                Fusce id velit ut tortor. Sed elementum tempus
-                                egestas sed sed risus pretium quam. Ipsum
-                                faucibus vitae aliquet nec ullamcorper sit amet
-                                risus nullam. Non odio euismod lacinia at quis
-                                risus sed vulputate odio. Dui sapien eget mi
-                                proin sed libero. Aliquet sagittis id
-                                consectetur purus ut faucibus pulvinar elementum
-                                integer. Non enim praesent elementum facilisis
-                                leo. Nisl suscipit adipiscing bibendum est.
+                                . If you don't see Alti after authorization,
+                                please double check that you added Alti to the
+                                right server.
                             </p>
                         </section>
                         <section className='mt-5'>
                             <h2>Step 2. Set Alti Up</h2>
                             <p>
-                                Choose if you would like to enable Alti's
-                                leaderboard
+                                Alti has 3 features that server admins can
+                                choose to enable or disable.
                             </p>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua.
-                                Varius vel pharetra vel turpis nunc. Tortor
-                                posuere ac ut consequat semper viverra. Mauris a
-                                diam maecenas sed enim. Diam sollicitudin tempor
-                                id eu. Aliquam eleifend mi in nulla posuere.
-                                Fusce id velit ut tortor. Sed elementum tempus
-                                egestas sed sed risus pretium quam. Ipsum
-                                faucibus vitae aliquet nec ullamcorper sit amet
-                                risus nullam. Non odio euismod lacinia at quis
-                                risus sed vulputate odio. Dui sapien eget mi
-                                proin sed libero. Aliquet sagittis id
-                                consectetur purus ut faucibus pulvinar elementum
-                                integer. Non enim praesent elementum facilisis
-                                leo. Nisl suscipit adipiscing bibendum est.
-                            </p>
+                            <ul>
+                                <li>
+                                    Leaderboard: Alti can keep track of which
+                                    members give the most alt text feedback!
+                                    Feedback is extremely important in making
+                                    sure that lti gives clear and valuable alt
+                                    text for users with screen readers. More
+                                    feedback results in better alt text! Feel
+                                    free to toggle this feature using{" "}
+                                    <code>
+                                        /leaderboard
+                                    </code>{" "}
+                                    and selecting true or false.
+                                </li>
+                                <li>
+                                    Auto-response: By default, Alti responds to
+                                    every image sent in any of your discord
+                                    channels. If you'd like to disable this
+                                    feature so that Alti only provides alt text
+                                    when prompted, please use the{" "}
+                                    <code>/alt-auto</code>{" "}
+                                    command and select true or false to either
+                                    enable or disable auto responses.
+                                </li>
+                                <li>
+                                    Opt-In roles: If you'd like members to be
+                                    able to opt out of seeing Alti's messages,
+                                    please enable opt-in roles using the{" "}
+                                    <code>/opt-in</code>{" "}
+                                    command!
+                                </li>
+                            </ul>
+                            <p></p>
                         </section>
                         <section className='mt-5'>
-                            <h2>Step 3. Commands!</h2>
+                            <h2>Step 3. Using Alti</h2>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua.
-                                Varius vel pharetra vel turpis nunc. Tortor
-                                posuere ac ut consequat semper viverra. Mauris a
-                                diam maecenas sed enim. Diam sollicitudin tempor
-                                id eu. Aliquam eleifend mi in nulla posuere.
-                                Fusce id velit ut tortor. Sed elementum tempus
-                                egestas sed sed risus pretium quam. Ipsum
-                                faucibus vitae aliquet nec ullamcorper sit amet
-                                risus nullam. Non odio euismod lacinia at quis
-                                risus sed vulputate odio. Dui sapien eget mi
-                                proin sed libero. Aliquet sagittis id
-                                consectetur purus ut faucibus pulvinar elementum
-                                integer. Non enim praesent elementum facilisis
-                                leo. Nisl suscipit adipiscing bibendum est.
+                                Alti is ready to use! Depending on the settings
+                                that you've selected, Alti can keep track of a
+                                leaderboard of your top contributing members and
+                                generate alt text for every image sent in your
+                                discord server! By using Alti, you help us make
+                                discord a more accessible environment for blind
+                                or low vision users who use screen readers!
                             </p>
+                            <p>
+                                Here's a brief list of commands that Alti comes
+                                with!
+                            </p>
+                            <ul>
+                                <li>
+                                    <code>/help</code> lists all available commands
+                                </li>
+                                <li>
+                                    <code>/alt-auto</code> enables or disables automatic alt text generation on every image sent
+                                </li>
+                                <li>
+                                    <code>/alt-text</code> prompts Alti to generate alt text for the most recent image
+                                </li>
+                                <li>
+                                    <code>/leaderboard</code> enables or disables a leaderboard containing your top members who've contributed to alt text generation!
+                                </li>
+                            </ul>
                         </section>
                     </Col>
                     <Col sm={6}>
