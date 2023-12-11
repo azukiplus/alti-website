@@ -165,6 +165,16 @@ const About = () => {
                 <li>Discord recently introduced a voice memo feature which allows for users to send short audio messages. It would be helpful for people who are deaf or hard of hearing to be able to see a transcription of audio messages. </li>
                 <li>Alti currently uses two AI models: OpenAI's GPT-4 and Microsoft's Azure AI Vision. As AI technologies improve, it would be best to update Alti with the best current options for AI image recognition.</li>
             </ul>
+            <h2>
+                How we made alti accessible
+            </h2>
+            <p>
+                Alti can be added to a Discord server by clicking the "Add to Discord" button in the navigation bar. We made this site for Alti accessible by adding alt text to all images when necessary. Because this site features so many images with text descriptions displayed on the site itself, we made sure to remove alt text for those images so that screen reader users wouldn't have to hear the same image description twice. We also made sure to use semantic HTML and to have a high contrast between text and background colors. Also, we added a skip link for users who use tab navigation. Our heading levels have all been manually checked to make sure that they are in the correct order. 
+            </p>
+            <p>
+                We made Alti accessible by using Discord's built-in User Interface components as much as possible, such as buttons. We also decided to create the built-in leaderboard as a Discord message so that people with screen readers can read the leaderboard as a message rather than having to go to an external link on another browser.
+            </p>
+            <Image src="/img/wave.jpg" alt="A screenshot of 4 uses of the WAVE web accessibility evaluation tool that shows that there are no accessibility errors detected in any of the pages for the Alti website." />
         </div>
     );
 };

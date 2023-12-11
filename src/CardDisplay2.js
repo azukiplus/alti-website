@@ -5,7 +5,7 @@ function CardDisplay2() {
     return (
         <Accordion>
             <Accordion.Item eventKey="0">
-                <Accordion.Header>Alt text uses location as context</Accordion.Header>
+                <Accordion.Header as="h6">Alt text uses location as context</Accordion.Header>
                 <Accordion.Body>
                     <Row>
                         <ImageCard cardSrc="/img/carddisplay/statacenter.png" cardTitle="Stata Center" cardTextAzure="a person standing in a park with buildings in the background" cardTextGPT="A person stands smiling at night with the unique architecture of MIT's Stata Center in the background." />
@@ -16,7 +16,7 @@ function CardDisplay2() {
                 </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item eventKey="1">
-                <Accordion.Header>Alt text is accurate even with ambiguous/tricky pictures</Accordion.Header>
+                <Accordion.Header as="h6">Alt text is accurate even with ambiguous/tricky pictures</Accordion.Header>
                 <Accordion.Body>
                     <Row>
                         <ImageCard cardSrc="/img/carddisplay/tomatocushion.jpg" cardTitle="Tomato cushion" cardTextAzure="a tomato pillow in a car" cardTextGPT="A cushion shaped like a slice of tomato sits on a car seat, adding a quirky touch to the ride." />
@@ -26,7 +26,7 @@ function CardDisplay2() {
                 </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item eventKey="2">
-                <Accordion.Header>Memes can be captioned</Accordion.Header>
+                <Accordion.Header as="h6">Memes can be captioned</Accordion.Header>
                 <Accordion.Body>
                     <Row>
                         <ImageCard cardSrc="/img/carddisplay/cart.png" cardTitle="Cart ratings" cardTextAzure="several shopping carts with yellow stars" cardTextGPT="A humorous take on shopping carts rated like video game characters for their speed, strength, and agility." />
@@ -37,7 +37,7 @@ function CardDisplay2() {
                 </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item eventKey="3">
-                <Accordion.Header>OpenAI creates better alt text than Azure</Accordion.Header>
+                <Accordion.Header as="h6">OpenAI creates better alt text than Azure</Accordion.Header>
                 <Accordion.Body>
                     <Row>
                         <ImageCard cardSrc="/img/carddisplay/zelda.png" cardTitle="Zelda screenshot" cardTextAzure="a screenshot of a video game" cardTextGPT="A player in a video game is about to be hit by a large, floating rock." />
@@ -48,13 +48,13 @@ function CardDisplay2() {
                 </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item eventKey="4">
-                <Accordion.Header>Azure creates better alt text than OpenAI</Accordion.Header>
+                <Accordion.Header as="h6">Azure creates better alt text than OpenAI</Accordion.Header>
                 <Accordion.Body>
                     <Row>
                         <ImageCard cardSrc="/img/carddisplay/magnets.png" cardTitle="University magnets" cardTextAzure="a group of magnets on a white wall" cardTextGPT="A collection of prestigious university logos alongside a postcard displayed on a wall." />
                         <ImageCard cardSrc="img/carddisplay/huskycat.jpg" cardTitle="Husky cat" cardTextAzure="a group of dogs and a cat on a couch" cardTextGPT="A cat in a shark costume sits between two huskies on a sofa, looking like part of the pack." />
                         <ImageCard cardSrc="img/carddisplay/lemon.png" cardTitle="Lemon peels" cardTextAzure="lemon peels on a counter" cardTextGPT="When life gives you lemons, some assembly may be required." />
-                        <ImageCard cardSrc="img/carddisplay/balcony.jpg" cardTitle="Lemon peels" cardTextAzure="a building with a balcony" cardTextGPT="A person in a red shirt stands on a sunny balcony above a garage door." />
+                        <ImageCard cardSrc="img/carddisplay/balcony.jpg" cardTitle="Balcony" cardTextAzure="a building with a balcony" cardTextGPT="A person in a red shirt stands on a sunny balcony above a garage door." />
                     </Row>
                 </Accordion.Body>
             </Accordion.Item>

@@ -4,7 +4,7 @@ function ImageCard(props) {
     return (
         <span className="m-1 w-auto">
             <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src={props.cardSrc} />
+                <Card.Img variant="top" src={props.cardSrc} alt=""/>
                 <Card.Body>
                     <Card.Title>{props.cardTitle}</Card.Title>
                     <Card.Text>
