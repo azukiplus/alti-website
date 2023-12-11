@@ -1,19 +1,20 @@
 nav .btn {
+    background-color: #ffffff;
+    border-color: #ffffff;
+    color: #3C4892ff;
+    font-family: 'Jockey One', sans-serif;
+}
+
+nav .btn:hover {
     background-color: #9D92CCff;
     border-color: #9D92CCff;
     color: #ffffff;
 }
 
-nav .btn:hover {
-    background-color: #e5e5e5;
-    border-color: #ffffff;
-    color: #363636;
-}
-
 nav .btn:active {
-    background-color: #e5e5e5 !important;
-    border-color: #e5e5e5;
-    color: #363636 !important;
+    background-color: #9D92CCff !important;
+    border-color: #9D92CCff;
+    color: #ffffff !important;
 }
 .navbar-brand {
     font-family: 'Jockey One', sans-serif;

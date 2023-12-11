@@ -4,9 +4,7 @@ import {
     Nav,
     Navbar,
     NavDropdown,
-    Form,
     Button,
-    InputGroup,
 } from "react-bootstrap";
 import "./css/navbar.css";
 

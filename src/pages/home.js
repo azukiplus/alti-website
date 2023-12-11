@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Image, Button, Stack, Container, Row, Col } from "react-bootstrap";
 import CarouselComp from "../carousel";
 import "../css/home.css";
