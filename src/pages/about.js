@@ -1,14 +1,17 @@
 import React from "react";
+import CardDisplay1 from "../CardDisplay1.js";
+import CardDisplay2 from "../CardDisplay2.js";
 import { Image } from "react-bootstrap";
 import "../css/about.css";
 
 const About = () => {
     return (
-        <div className='about p-5' id='main'>
+        <div className='about' id='main'>
             <h1>About Alti</h1>
             <h2>
                 Introduction
             </h2>
+
             <h3>
                 Discord and Accessibility
             </h3>
@@ -29,9 +32,7 @@ const About = () => {
             <p>
                 Alti runs off of two AI models: <a href="https://openai.com/product" target="_blank" rel="noreferrer">GPT-4</a> developed by OpenAI and <a href="https://azure.microsoft.com/en-us/products/ai-services/ai-vision" target="_blank" rel="noreferrer">Azure AI Vision</a> developed by Microsoft. For any image, Alti will generate and display two versions of alt text using GPT-4 and Azure. But, since AI isn't always correct or accurate, we decided to allow for helpful users in a server to vote on which alt text is more accurate for any given image. Anyone in the server can vote for which alt text is more accurate. And, the more you vote, the more points you get in Alti's leaderboard!
             </p>
-
-            {/* <Image src="img/alti_transparent.png" alt="The Alti logo that looks like a futuristic silver, cat-like creature with large blue eyes." /> */}
-
+            <Image src="img/alti_transparent.png" alt="The Alti logo that looks like a futuristic silver, cat-like creature with large blue eyes." className="img-fluid" />
 
             <h2>Related Work</h2>
             <p>
@@ -89,7 +90,7 @@ const About = () => {
             </p>
             <blockquote>
                 "Facebook has a brilliant feature where screen-readers describe images, in 2017 Facebook introduced automatic alternative text. Automatic alternative text (alt text) generates a description of a photo using artificial intelligence (AI) which is then read out loud by screen-readers. People using screen-readers will hear a list of items a photo may contain as they swipe past photos on Facebook, for example, a screen-reader might say, 'Image may contain: three people, people smiling, table, indoors' or 'image may contain: one person, outdoors, grass, plants and nature'... I use Facebook on my iPhone, iPad and also on the computer. On the iPhone and iPad, I use the Facebook app. I find it really easy to navigate and also find it very accessible (most of the time). I especially like the image description feature, and find this especially useful."
-                - Holly, a blogger who posts on <a href="https://lifeofablindgirl.com/2019/04/03/how-accessible-is-social-media-if-you-have-a-visual-impairment/" target="_blank" rel="noreferrer">her blog "Life of a Blind Girl"</a>
+                <span>- Holly, a blogger who posts on <a href="https://lifeofablindgirl.com/2019/04/03/how-accessible-is-social-media-if-you-have-a-visual-impairment/" target="_blank" rel="noreferrer">her blog "Life of a Blind Girl"</a></span>
             </blockquote>
             <p>
                 On the Discord support forums, there are BLV people <a href="https://support.discord.com/hc/en-us/community/posts/4404136474775-Image-and-video-text-descriptions" target="_blank" rel="noreferrer">who ask for Discord to add more functionalities around alt text</a>, such as the feature to edit/add alt text after an image is uploaded.
@@ -102,6 +103,7 @@ const About = () => {
                 You can [add] a text description to an image before uploading it, you can describe the image with the information the image contains. If you didn't [add] a description there should also be an option to do so if right clicking on the image.
 
                 [Similar] with videos, we all have the right to know what an image or a video contains."
+                <span>- ola_gullstrand, a blind Discord user</span>
             </blockquote>
 
             <h2>
@@ -138,17 +140,23 @@ const About = () => {
                     Apathy: The other reaction we found to the bot was apathy. When the bot generated alt text for images sent in the channel, people were confused but didn't further try to interact with the bot.
                 </li>
             </ul>
-            <h4>
+            <h4 className="pt-4">
                 AI and accuracy
             </h4>
             <p>
                 After leaving the bot running for a few days, we looked at the accuracy of the AI-generated alt text. OpenAI's alt text was almost always more accurate than Azure's alt text. OpenAI described images in much more detail than Azure, and included relevant information such as location.
             </p>
-            <h3>
+            <h4>Examples</h4>
+            <p>The following images are images that were sent by people in Discord servers after putting the bot inside the server with no other context.</p>
+            <h5>At least one AI produces accurate/correct alt text</h5>
+            <CardDisplay2 />
+            <h5 className="pt-4">Some AI inaccuracies/mistakes</h5>
+            <CardDisplay1 className="pb-4" />
+            <h3 className="pt-4">
                 Alti and the Future
             </h3>
             <p>
-                Our bot is transformative because it uses AI to automatically generate alt text in real time for images sent on Discord. This technology can heavily improve BLV people's experience on Discord, where most people don't add alt text to their images. However, using AI is a two-edged sword because it's not always accurate, and it can gender people in images even when prompted not to.
+                Our bot is transformative because it uses AI to automatically generate alt text in real time for images sent on Discord. This technology can heavily improve BLV people's experience on Discord, where most people don't add alt text to their images. However, using AI is a two-edged sword because it's not always accurate, and it can gender people in images even when prompted not to. Additionally, non-BLV individuals may use the bot as a form of entertainment.
             </p>
             <p>
                 Alti's current main purpose is to generate alt text for images for BLV people. In the future, it would be nice to be able to transition Alti from an alt text bot into a full-fledged accessibility bot for Discord that can also generate transcriptions for audio-based content.

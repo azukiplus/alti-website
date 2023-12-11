@@ -14,7 +14,7 @@ const HomePage = () => {
     <>
       <div className='image-container' id='main'>
         <Image
-          src={"img/vecteezy_mountain.jpg"}
+          src={"img/mountain.jpg"}
           title='Source: Vecteezy'
           alt='A large, snowy mountain with snowy hilltops in the distance. The sky is a colorful purple and blue with stars illuminating it.'
           fluid

@@ -5,16 +5,25 @@
     background-color: #FEFEFEff;
 }
 
-.about h1 {
+.about h1, .about h5 {
     color: #0E173E;
     font-family: 'Jockey One', sans-serif;
 }
 
-.about p, .about h2, .about h3, .about h4, .about ul, .about li, .about a, .about blockquote {
+.about p,
+.about h2,
+.about h3,
+.about h4,
+.about ul,
+.about li,
+.about a,
+.about blockquote {
     color: #0E173E;
 }
 
-.about ul, .about li, .about blockquote {
+.about ul,
+.about li,
+.about blockquote {
     text-align: left;
 }
 
@@ -40,4 +49,48 @@ main p a {
 
 main p a:hover {
     background-size: 0 3px, 100% 3px;
+}
+
+blockquote {
+    margin: 50px auto;
+    color: #555555;
+    padding: 1.2em 30px 1.2em 75px;
+    border-left: 8px solid #4690EAff;
+    line-height: 1.6;
+    position: relative;
+    background: #EDEDED;
+}
+
+blockquote::before {
+    content: "\201C";
+    color: #4690EAff;
+    font-size: 4em;
+    position: absolute;
+    left: 10px;
+    top: -10px;
+}
+
+blockquote::after {
+    content: '';
+}
+
+blockquote span {
+    display: block;
+    color: #333333;
+    font-weight: bold;
+    margin-top: 1em;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 768px) {
+    .about {
+        padding: 5%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .about {
+        padding: 5% 15% 5%;
+    }
 }
