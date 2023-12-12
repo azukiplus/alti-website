@@ -174,7 +174,7 @@ const About = () => {
             <p>
                 We made Alti accessible by using Discord's built-in User Interface components as much as possible, such as buttons. We also decided to create the built-in leaderboard as a Discord message so that people with screen readers can read the leaderboard as a message rather than having to go to an external link on another browser.
             </p>
-            <Image src="/img/wave.jpg" alt="A screenshot of 4 uses of the WAVE web accessibility evaluation tool that shows that there are no accessibility errors detected in any of the pages for the Alti website." />
+            <Image src="/img/wave.jpg" alt="A screenshot of 4 uses of the WAVE web accessibility evaluation tool that shows that there are no accessibility errors detected in any of the pages for the Alti website." className="img-fluid" />
         </div>
     );
 };
