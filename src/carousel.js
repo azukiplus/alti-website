@@ -22,7 +22,7 @@ export default function CarouselComp() {
   const images = [
     { src: 'img/california.jpg', subtitle: 'A partially cloudy landscape with red grass, a rocky path, and a tree on the left. The ocean is visible in the distance.' },
     { src: 'img/la.jpg', subtitle: 'A wooden boardwalk in Los Angeles with the ocean and beach visible around it. There are people crossing the boardwalk, and palm trees in the distance.' },
-    { src: 'img/akihabara.jpg', subtitle: 'A picture of Akihabara, Tokyo on a sunny day. There are steep buildings with colorful Japanese ads plastered on them. It is crowded, with many people and cars.' },
+    { src: 'img/akihabara.jpg', subtitle: 'A picture of Tokyo on a sunny day. There are steep buildings with colorful Japanese ads plastered on them. It is crowded, with many people and cars.' },
     { src: 'img/cat.jpg', subtitle: 'A close up image of a brown cat with pale green eyes and long, white whiskers. ' },
     { src: 'img/pizza.jpg', subtitle: 'A whole pizza with tomato sauce, black olive slices, and a generous amount of cheese topped with leafy greens.' },
     { src: 'img/unagi.jpg', subtitle: 'White rice inside a black bowl with Japanese grilled eel on top. The eel is slightly charred.' },
@@ -73,7 +73,7 @@ export default function CarouselComp() {
       >
         {images.map((image, index) => (
           <div key={index} className="carousel-card">
-            <Image className="image" src={image.src} alt="" onClick={() => clickImage(image.src)} fluid />
+            <Image className="image" src={image.src} alt={image.subtitle} onClick={() => clickImage(image.src)} fluid />
             <div className={subtitle[image.src.replace('img/','').replace('.jpg','')] ? 'fadeIn' : 'fadeOut'}>
               <p className='subtitle' aria-hidden='true'>{image.subtitle}</p>
             </div>
