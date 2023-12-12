@@ -43,23 +43,23 @@ const GettingStarted = () => {
                         <section className='mt-5'>
                             <h2>Step 2. Set Alti Up</h2>
                             <p>
-                                Alti has 3 features that server admins can
+                                Alti has features that server admins can
                                 choose to enable or disable.
                             </p>
                             <ul>
-                                <li>
+                                {/* <li>
                                     Leaderboard: Alti can keep track of which
                                     members give the most alt text feedback!
                                     Feedback is extremely important in making
-                                    sure that lti gives clear and valuable alt
+                                    sure that Alti gives clear and valuable alt
                                     text for users with screen readers. More
                                     feedback results in better alt text! Feel
-                                    free to toggle this feature using{" "}
+                                    free to view the leaderboard using{" "}
                                     <code>
-                                        /leaderboard
+                                        /check-leaderboard
                                     </code>{" "}
-                                    and selecting true or false.
-                                </li>
+                                    to see who the current top contributors are!
+                                </li> */}
                                 <li>
                                     Auto-response: By default, Alti responds to
                                     every image sent in any of your discord
@@ -70,12 +70,15 @@ const GettingStarted = () => {
                                     command and select true or false to either
                                     enable or disable auto responses.
                                 </li>
-                                <li>
+                                {/* <li>
                                     Opt-In roles: If you'd like members to be
                                     able to opt out of seeing Alti's messages,
                                     please enable opt-in roles using the{" "}
                                     <code>/opt-in</code>{" "}
                                     command!
+                                </li> */}
+                                <li>
+                                    Vote timer: Using the <code>/vote-timer</code> command allows for users to change the amount of time they have to vote on alt text. 
                                 </li>
                             </ul>
                             <p></p>
@@ -106,7 +109,7 @@ const GettingStarted = () => {
                                     <code>/alt-text</code> prompts Alti to generate alt text for the most recent image
                                 </li>
                                 <li>
-                                    <code>/leaderboard</code> enables or disables a leaderboard containing your top members who've contributed to alt text generation!
+                                    <code>/check-leaderboard</code> displays a leaderboard containing your top members who've contributed to alt text generation!
                                 </li>
                             </ul>
                         </section>

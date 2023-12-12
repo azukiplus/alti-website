@@ -4,7 +4,7 @@ import "../css/faq.css";
 
 const Faq = () => {
     return (
-        <div className='p-3 about mt-5 mb-5'>
+        <div className='p-5 about mt-5 mb-5'>
             <Container>
                 <div className='jumbotron jumbotron-fluid mt-3 pb-3' id='main'>
                     <h1 className="faq">Frequently Asked Questions</h1>
@@ -25,7 +25,7 @@ const Faq = () => {
                             Does Alti collect user data?
                         </Accordion.Header>
                         <Accordion.Body>
-                            Alti does not collect or store user data. However, we do need permissions to read your Discord server's messages and send messages in order to add alt text to images.
+                            Alti does not collect or store user data except for Discord IDs and usernames to use for Alti's leaderboard. However, we do need permissions to read your Discord server's messages and send messages in order to add alt text to images.
                         </Accordion.Body>
                     </Accordion.Item>
                     <Accordion.Item eventKey='2'>
@@ -33,7 +33,7 @@ const Faq = () => {
                             I can't add Alti for some reason. What am I doing wrong?
                         </Accordion.Header>
                         <Accordion.Body>
-                            Make sure you have the Manage Server permission in the Discord server you're trying to add Alti to. 
+                            Make sure you have the Manage Server permission in the Discord server you're trying to add Alti to. If you're still having trouble, feel free to leave an issue on <a target="_blank" rel="noreferrer" href="https://github.com/KeejayK/DiscordAltText">our Github repository</a>.
                         </Accordion.Body>
                     </Accordion.Item>
                     <Accordion.Item eventKey='3'>
